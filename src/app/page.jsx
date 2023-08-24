@@ -1,16 +1,18 @@
+import Footer from './components/common/Footer';
+import Header from './components/common/Header';
+
 export default function Home() {
   return (
     <>
-    <header class="header"><i class="fa-solid fa-arrow-right"></i>
-    </header>
+      <header className="header container mt-lg-4">
+        <Header></Header>
+      </header>
 
-    <main class="content mt-4">
-      <picture>
-      <img src="/images/logo.jpg" alt="asdaad"></img>
-      </picture>
-      </main>
+      <main className="content"></main>
 
-    <footer class="footer">footer</footer>
+      <footer className="footer">
+        <Footer></Footer>
+      </footer>
     </>
-  )
+  );
 }
