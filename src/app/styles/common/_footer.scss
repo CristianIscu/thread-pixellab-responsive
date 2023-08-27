@@ -27,6 +27,7 @@
     display: flex;
     flex-wrap: wrap;
     row-gap: 50px;
+    text-transform: uppercase;
 
     ul {
       width: 50%;
@@ -45,15 +46,50 @@
 
   &-contact {
     grid-area: contact;
+    text-transform: uppercase;
+
+    h1 {
+      font-weight: 300;
+      font-size: 18px;
+    }
+
+    span {
+      font-weight: 700;
+    }
+
+    a[href^='mailto:'] {
+      color: $brand-primary;
+    }
   }
 
   &-connect {
     grid-area: connect;
     justify-self: center;
+    text-transform: uppercase;
 
     @include media-breakpoint-up(lg) {
       justify-self: start;
-      align-self: center;
+      align-self: end;
+    }
+
+    ul {
+      display: flex;
+      gap: 33px;
+
+      li {
+        text-align: center;
+      }
+
+      i[class*='fa-'] {
+        color: $brand-primary;
+        font-size: 30px;
+      }
+    }
+  }
+
+  &-secondary {
+    p {
+      text-align: center;
     }
   }
 }

@@ -33,6 +33,11 @@
       display: flex;
       gap: 16px;
     }
+
+    i[class*='fa-'] {
+      font-size: 20px;
+      color: $brand-primary;
+    }
   }
 
   &-controls {
@@ -47,6 +52,14 @@
 
       i[class*='fa-'] {
         font-size: 24px;
+      }
+
+      span {
+        font-size: 14px;
+        color: $white;
+        background: $brand-primary;
+        border-radius: 50px;
+        padding: 4px 8px;
       }
     }
   }
@@ -76,7 +89,7 @@
 
       a {
         display: block;
-        pad: 8px 12px;
+        padding: 8px 12px;
         font-weight: 300;
         line-height: 24px;
         font-size: 20px;
@@ -88,6 +101,28 @@
           background: $brand-primary;
           color: $white;
         }
+      }
+    }
+
+    .nav-secondary {
+      ul {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+      }
+
+      a {
+        display: block;
+        padding: 8px 12px;
+        font-weight: 300;
+        line-height: 17px;
+        font-size: 14px;
+        text-transform: uppercase;
+        transition: color 0.2s linear, color 0.2s ease-in-out;
+      }
+
+      a:hover {
+        color: $brand-primary;
       }
     }
   }
