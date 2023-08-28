@@ -40,7 +40,7 @@ export default function Header() {
             <li>
               <button type="button" title="Cart">
                 <i className="fa-solid fa-cart-shopping"></i>
-                <span>3</span>
+                <span className="cart-qty d-none d-lg-block">3</span>
               </button>
             </li>
 
