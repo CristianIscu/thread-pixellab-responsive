@@ -10,6 +10,9 @@
   align-items: center;
   line-height: 18px;
   text-align: center;
+  position: relative;
+  right: -129px;
+  top: -471px;
 
   &-primary {
     background: $brand-primary;

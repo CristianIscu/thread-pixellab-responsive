@@ -1,10 +1,46 @@
 .product-tile {
   text-align: center;
+  position: relative;
 
   &-header {
     img {
       max-width: 100%;
       width: 100%;
+    }
+  }
+
+  &-title {
+    font-size: 24px;
+
+    span {
+      color: #000;
+    }
+
+    span:last-child {
+      font-weight: 300;
+    }
+  }
+
+  &-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  &-content {
+    .product-catalog-price {
+      display: block;
+      text-decoration: line-through;
+      font-size: 18px;
+    }
+
+    .product-price {
+      font-size: 24px;
+      font-weight: 300;
+    }
+
+    .product-price span {
+      color: $brand-primary;
+      font-weight: 700;
     }
   }
 }
